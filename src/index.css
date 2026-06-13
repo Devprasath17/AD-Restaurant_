@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #0d0c0a;
+    color: #e8e6e1;
+    font-family: 'Inter', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background-color: #C9982A;
+    color: #0d0c0a;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #0d0c0a;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #C9982A;
+    border-radius: 3px;
+  }
+}
+
+@layer components {
+  .gold-gradient {
+    background: linear-gradient(135deg, #C9982A 0%, #e8b82a 50%, #C9982A 100%);
+  }
+
+  .text-gold-gradient {
+    background: linear-gradient(135deg, #C9982A, #f0cb5c, #C9982A);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .glass-card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(201, 152, 42, 0.15);
+  }
+
+  .divider-gold {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #C9982A, transparent);
+  }
+
+  .btn-gold {
+    @apply inline-flex items-center justify-center px-8 py-3 text-sm font-medium tracking-widest uppercase transition-all duration-300;
+    background: linear-gradient(135deg, #C9982A, #e8b82a);
+    color: #0d0c0a;
+    border: 1px solid transparent;
+  }
+
+  .btn-gold:hover {
+    background: transparent;
+    color: #C9982A;
+    border-color: #C9982A;
+  }
+
+  .btn-outline-gold {
+    @apply inline-flex items-center justify-center px-8 py-3 text-sm font-medium tracking-widest uppercase transition-all duration-300;
+    background: transparent;
+    color: #C9982A;
+    border: 1px solid #C9982A;
+  }
+
+  .btn-outline-gold:hover {
+    background: linear-gradient(135deg, #C9982A, #e8b82a);
+    color: #0d0c0a;
+  }
+
+  .section-label {
+    @apply text-xs tracking-[0.25em] uppercase font-medium;
+    color: #C9982A;
+  }
+
+  .section-title {
+    @apply font-serif text-4xl md:text-5xl lg:text-6xl font-light;
+    color: #e8e6e1;
+    line-height: 1.1;
+  }
+
+  .gold-shimmer {
+    background: linear-gradient(45deg, #d4af37 25%, #f2ca50 50%, #d4af37 75%);
+    background-size: 200% auto;
+    transition: 0.5s;
+  }
+  .gold-shimmer:hover {
+    background-position: right center;
+  }
+  .gold-glow {
+    box-shadow: 0 0 20px -5px rgba(212, 175, 55, 0.4);
+  }
+  .luxury-underline {
+    border-bottom: 1px solid rgba(142, 110, 46, 0.12);
+    transition: border-color 0.3s ease;
+  }
+  .luxury-underline:focus-within {
+    border-color: #d4af37;
+  }
+
+  .parallax-bg {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}

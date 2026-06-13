@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="600" viewBox="0 0 1600 600" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="g2" x1="0" x2="1">
+      <stop offset="0" stop-color="#0b0b0b"/>
+      <stop offset="1" stop-color="#181616"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="600" fill="url(#g2)" />
+  <text x="50%" y="50%" text-anchor="middle" fill="#d4af37" font-family="Cormorant Garamond, serif" font-size="48" dy=".3em">Connect with AD</text>
+</svg>

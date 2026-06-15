@@ -98,7 +98,7 @@ export const MENU_ITEMS = [
     category: 'Starters',
     badge: null,
     description: 'Pressed duck foie gras, Sauternes gelée, toasted brioche, and pickled Muscat grapes.',
-    image: 'https://images.pexels.com/photos/3814446/pexels-photo-3814446.jpeg?auto=compress&cs=tinysrgb&w=600&q=85',
+    image: 'https://images.pexels.com/photos/6880221/pexels-photo-6880221.jpeg?auto=compress&cs=tinysrgb&w=600&q=85',
   },
   {
     id: 12,
